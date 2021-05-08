@@ -16,7 +16,7 @@ foreach ($line in $my_file){
                 $dot = "..."
                 $word_end = $word_length-2
                 
-            }elseif($word -match '[.?!:]'){
+            }elseif($word -match '[.?!:,]'){
                 $dot = $word[$word_end]
                 $word_end = $word_length
             }
